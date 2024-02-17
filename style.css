@@ -32,8 +32,13 @@ form {
     margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="number"],
+form input[type="text"],
+form input[type="number"] {
+    padding: 10px; /* Increase padding for larger input fields */
+    font-size: 15px; /* Increase font size for larger input fields */
+}
+
+
 button {
     padding: 8px;
     margin-right: 10px;
