@@ -41,6 +41,12 @@ function handleSubmit(event) {
         
       
         span.innerHTML = `$${totalMonthly.toFixed(2)}`;
+
+        document.getElementById("firstName").value = '';
+        document.getElementById("lastName").value = '';
+        document.getElementById("employeeID").value = '';
+        document.getElementById("jobTitle").value = '';
+        document.getElementById("annualSalary").value = '';
     
     }
 
