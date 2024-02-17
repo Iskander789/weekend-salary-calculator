@@ -21,6 +21,12 @@ function handleSubmit(event) {
 
     `<tr>
     <td>${firstName}</td>
+    <td>${lastName}</td>
+    <td>${employeeID}</td>
+    <td>${jobTitle}</td>
+    <td>${annualSalary}</td>
+    <td></td>
+
 </tr>`;
 
 }
