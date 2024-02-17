@@ -47,6 +47,10 @@ function handleSubmit(event) {
         document.getElementById("employeeID").value = '';
         document.getElementById("jobTitle").value = '';
         document.getElementById("annualSalary").value = '';
+
+        if(totalMonthly > 20000){
+            footer.classList.add('over-budget');
+        }
     
     }
 

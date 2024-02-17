@@ -22,3 +22,7 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f9f9f9;
 }
+
+.over-budget{
+    color: red;
+  }
