@@ -1,6 +1,13 @@
 console.log('js is sourced!');
 let totalMonthly = 0;
 
+function setDefaultTotalMonthly() {
+    let span = document.getElementById("total-monthly");
+    span.innerHTML = "$0.00";
+  }
+  
+document.addEventListener("DOMContentLoaded", setDefaultTotalMonthly);
+
 function handleSubmit(event) {
     event.preventDefault();
     let firstName = document.getElementById('firstName').value;
