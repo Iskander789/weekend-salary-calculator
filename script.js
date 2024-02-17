@@ -17,8 +17,11 @@ function handleSubmit(event) {
     console.log('Job title entered: ', jobTitle);
     console.log('Annual salary entered: ', annualSalary);
 
-    
+    tableBody.innerHTML += 
 
+    `<tr>
+    <td>${firstName}</td>
+</tr>`;
 
 }
 
