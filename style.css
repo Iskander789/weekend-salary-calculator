@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color:#5b6473;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -34,8 +34,8 @@ form {
 
 form input[type="text"],
 form input[type="number"] {
-    padding: 10px; /* Increase padding for larger input fields */
-    font-size: 15px; /* Increase font size for larger input fields */
+    padding: 10px; 
+    font-size: 15px; 
 }
 
 
@@ -86,5 +86,6 @@ footer {
 background-color: #333;
 color: #fff;
 padding: 10px 20px;
-text-align: center;
+text-align: right;
+font-size: 26px;
 }
