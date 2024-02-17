@@ -16,11 +16,11 @@ function handleSubmit(event) {
     console.log('Employee ID # entered: ', employeeID);
     console.log('Job title entered: ', jobTitle);
     console.log('Annual salary entered: ', annualSalary);
-    
 
-    tableBody.innerHTML += 
 
-    `<tr>
+    tableBody.innerHTML +=
+
+        `<tr>
     <td>${firstName}</td>
     <td>${lastName}</td>
     <td>${employeeID}</td>
@@ -31,12 +31,23 @@ function handleSubmit(event) {
 
 </tr>`;
 
-}
-
-function deleteEmployee(event, annualSalary){
-    console.log("Employee deleted.");
-
-    event.target.parentElement.parentElement.remove();
+       
+        totalMonthly += annualSalary/12;
+        console.log("Total monthly:", totalMonthly);
+        
+       
+        let span = document.getElementById("total-monthly");
+        let footer = document.getElementById("footer")
+        
+      
+        span.innerHTML = `$${totalMonthly.toFixed(2)}`;
     
-}
+    }
+
+    function deleteEmployee(event, annualSalary) {
+        console.log("Employee deleted.");
+
+        event.target.parentElement.parentElement.remove();
+
+    }
 
