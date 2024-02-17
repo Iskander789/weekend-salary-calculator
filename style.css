@@ -1,8 +1,58 @@
+/* style.css */
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 th, td {
@@ -23,6 +73,13 @@ tr:hover {
     background-color: #f9f9f9;
 }
 
-.over-budget{
+.over-budget {
     color: red;
-  }
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+text-align: center;
+}
