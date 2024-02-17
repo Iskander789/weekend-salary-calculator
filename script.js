@@ -16,6 +16,7 @@ function handleSubmit(event) {
     console.log('Employee ID # entered: ', employeeID);
     console.log('Job title entered: ', jobTitle);
     console.log('Annual salary entered: ', annualSalary);
+    
 
     tableBody.innerHTML += 
 
@@ -25,9 +26,17 @@ function handleSubmit(event) {
     <td>${employeeID}</td>
     <td>${jobTitle}</td>
     <td>${annualSalary}</td>
+    <td><button onclick='deleteEmployee(event,${annualSalary})'>Delete</button></td>
     <td></td>
 
 </tr>`;
 
+}
+
+function deleteEmployee(event, annualSalary){
+    console.log("Employee deleted.");
+
+    event.target.parentElement.parentElement.remove();
+    
 }
 
