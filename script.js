@@ -21,6 +21,11 @@ function handleSubmit(event) {
     return;
   }
 
+  if (isNaN(annualSalary) || Number(annualSalary) <= 0) {
+    alert("Annual Salary must be a positive number");
+    return;
+  }
+
   console.log('First name entered:', firstName);
   console.log('Last name entered:', lastName);
   console.log('Employee ID # entered:', employeeID);
@@ -43,7 +48,7 @@ function handleSubmit(event) {
   let span = document.getElementById("total-monthly");
   let footer = document.getElementById("footer");
 
-  span.innerHTML = `$${totalMonthly.toFixed(2)}`;
+  span.innerHTML = `$${totalMonthly.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
   document.getElementById("firstName").value = '';
   document.getElementById("lastName").value = '';
@@ -61,7 +66,7 @@ function deleteEmployee(event, annualSalary) {
   event.target.parentElement.parentElement.remove();
   totalMonthly -= annualSalary / 12;
   let span = document.getElementById("total-monthly");
-  span.innerHTML = `$${totalMonthly.toFixed(2)}`;
+  span.innerHTML = `$${totalMonthly.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
   let footer = document.getElementById("footer");
   if (totalMonthly > 20000) {
     footer.classList.add('over-budget');
